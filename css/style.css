@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+:root {
+  --clr-primary-400: hsl(193, 38%, 86%);
+  --clr-primary-700: hsl(150, 100%, 66%);
+
+  --clr-neutral-400: hsl(217, 19%, 38%);
+  --clr-neutral-500: hsl(217, 19%, 24%);
+  --clr-neutral-700: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--clr-neutral-700);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  all: unset;
+}
+#advice {
+  font-size: 25px;
+  color: var(--clr-primary-400);
+}
+
+.advice-card {
+  background-color: var(--clr-neutral-500);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  position: relative;
+  max-width: 500px;
+  min-height: 300px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--clr-primary-700);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.divider {
+  margin-bottom: 2rem;
+}
+#generate-button {
+  background-color: var(--clr-primary-700);
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(100% - 25px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#generate-button:hover {
+  cursor: pointer;
+  box-shadow: var(--clr-primary-700) 0px 7px 29px 0px;
+}
